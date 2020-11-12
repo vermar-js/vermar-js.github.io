@@ -1,0 +1,31 @@
+/* @font-face {
+    font-family: avara;
+    src: url(fonts/avara.woff) format("opentype");
+} */
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden
+}
+
+#drawingcanvas {
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+
+#description {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 20%;
+}
+
+#displayedimage {
+    display: none;
+    position: absolute;
+    width: 30%;
+    box-shadow: 5px 5px 5px black;
+}
