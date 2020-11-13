@@ -1,3 +1,9 @@
+grid = []
+picdes = ["description of project 1", "description of project 2", "description of project 3", "description of project 4"]
+
+
+
+
 function setup() {
     ww = windowWidth
     wh = windowHeight
@@ -5,7 +11,7 @@ function setup() {
     canvas = createCanvas(ww, wh)
     canvas.parent("drawingcanvas")
     background(200, 223, 224)
-    grid = []
+
 
     let x = 0
     let y = 0
@@ -29,8 +35,8 @@ function setup() {
 
 function draw() {
 
-    fill(255), noStroke()
-    ellipse(mouseX, mouseY, 20)
+    stroke(255), stroke(ROUND), strokeJoin(ROUND), strokeWeight(25)
+    line(mouseX, mouseY, pmouseX, pmouseY)
 
     for (let i = 0; i < grid.length; i++) {
         if (grid[i].hover(mouseX, mouseY)) {
@@ -43,8 +49,6 @@ function draw() {
     }
 
 }
-
-
 
 
 class area {
@@ -72,6 +76,14 @@ class area {
         this.img.style.left = this.posx + "px"
         this.img.style.top = this.posy + "px"
         this.img.src = "images/" + number + ".png"
+        this.img.alt = picdes[number]
+
+
+        this.description = document.getElementById("description")
+        this.description.style.display = "block"
+        this.description.innerHTML = picdes[number]
+        this.description.style.left = this.posx + "px"
+
     }
 
 

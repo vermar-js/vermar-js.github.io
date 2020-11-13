@@ -10,13 +10,17 @@ body {
     overflow: hidden
 }
 
+.preloader {
+    display: none;
+}
+
 #drawingcanvas {
     display: block;
     position: absolute;
     z-index: -1;
 }
 
-#description {
+#bio {
     position: absolute;
     left: 0%;
     top: 0%;
@@ -27,5 +31,11 @@ body {
     display: none;
     position: absolute;
     width: 30%;
-    box-shadow: 5px 5px 5px black;
+}
+
+#description {
+    display: none;
+    position: absolute;
+    width: 30%;
+    bottom: 3%;
 }
