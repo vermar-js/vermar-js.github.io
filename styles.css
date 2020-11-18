@@ -1,13 +1,27 @@
-/* @font-face {
-    font-family: avara;
-    src: url(fonts/avara.woff) format("opentype");
-} */
+@font-face {
+    font-family: sneakregular;
+    src: url(fonts/Sneak-Regular.ttf)format("truetype");
+}
+
+@font-face {
+    font-family: sneakitalic;
+    src: url(fonts/Sneak-Regular-Italic.otf)format("opentype");
+}
 
 html,
 body {
     padding: 0;
     margin: 0;
-    overflow: hidden
+    font-family: sneakregular;
+    font-size: 10pt;
+    color: black;
+    overflow: hidden;
+    background-color: rgb(237, 247, 248);
+}
+
+a {
+    text-decoration: underline;
+    color: black;
 }
 
 .preloader {
@@ -22,9 +36,16 @@ body {
 
 #bio {
     position: absolute;
-    left: 0%;
-    top: 0%;
     width: 20%;
+}
+
+#revealbio {
+    display: inline;
+    text-decoration: underline;
+}
+
+#textbio {
+    display: none;
 }
 
 #displayedimage {
@@ -37,5 +58,5 @@ body {
     display: none;
     position: absolute;
     width: 30%;
-    bottom: 3%;
+    text-align: right;
 }

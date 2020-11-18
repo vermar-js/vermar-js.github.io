@@ -1,48 +1,96 @@
-grid = []
-picdes = ["description of project 1", "description of project 2", "description of project 3", "description of project 4"]
+fullgrid = []
+picdes = [
+    "Sleepwalking the Pluriverse, filmed performance (Guangzhou, 2020)",
+    "Sleepwalking the Pluriverse, filmed performance (Guangzhou, 2020)",
+    "Sleepwalking the Pluriverse, filmed performance (Guangzhou, 2020)3",
+    "Sleepwalking the Pluriverse, filmed performance (Guangzhou, 2020)",
+    "Sleepwalking the Pluriverse, filmed performance (Guangzhou, 2020)",
+    "Eight People with Eight Smartphones Walking Around a Room, film (Eindhoven, 2020)",
+    "From Here to There, performance (Eindhoven, 2018)",
+    "Mobscan, happening (Eindhoven, 2018 - 2019)",
+    "Mobscan, happening (Eindhoven, 2018 - 2019)",
+    "Mobscan, happening (Eindhoven, 2018 - 2019)",
+    "We’ve Got the Whole World in Our Hands, installation (Horst, 2018)",
+    "We’ve Got the Whole World in Our Hands, photo collection (Ongoing)",
+    "Boring Events Inbetween, digtial photograph (Eindhoven, 2019)",
+    "Boring Events Inbetween, digtial photograph (Eindhoven, 2019)",
+    "Boring Events Inbetween, digtial photograph (Eindhoven, 2019)",
+    "Boring Events Inbetween, installation (Eindhoven, 2019)",
+    "Table Stories, film (2019)",
+    "Design for the Time Being, collection of writing (Online, ongoing)",
+    "The Vertical Theatre of Doormats, film and public intervention (Eindhoven, 2020)",
+    "Caged Swing and a Saw, public intervention (Eindhoven, 2020)",
+    "Street Pattern at Romolo, performance and public intervention (Milan, 2017)",
+    "Evident of Gathering, photograph (Vancouver, 2016)",
+    "British National Oversea Passport, drawing (Porto, 2019)",
+    "Bed between Beds, instillation (Hong Kong, 1999)"
+]
 
 
+function revealbio() {
+    textbio = document.getElementById("textbio")
+    if (textbio.style.display === "none") {
+        textbio.style.display = "inline";
+    } else {
+        textbio.style.display = "none";
+    }
 
+}
+
+column_num = 14
+row_num = 9
+areanumber = row_num * column_num
 
 function setup() {
+
     ww = windowWidth
     wh = windowHeight
-    areanumber = 4
+
     canvas = createCanvas(ww, wh)
     canvas.parent("drawingcanvas")
-    background(200, 223, 224)
+    background(237, 247, 248);
+
+
+
+    posxbio = width / (column_num * 2), posybio = height / (row_num * 2);
+    bio = document.getElementById("bio").style.left = posxbio + "px"
+    bio = document.getElementById("bio").style.top = posybio + "px"
+
 
 
     let x = 0
     let y = 0
-    let w = width / (areanumber / 2)
-    let h = height / (areanumber / 2)
+    let w = width / column_num
+    let h = height / row_num
     for (let i = 0; i < areanumber; i++) {
 
         var ar = new area(x, y, w, h)
-        grid.push(ar)
+
+        fullgrid.push(ar)
 
         x = x + w
         if (x + w > width) {
 
-            y = 0 + h;
+            y = y + h;
             x = 0
         }
 
     }
+    hovergrid = [fullgrid[16], fullgrid[18], fullgrid[20], fullgrid[22], fullgrid[24], fullgrid[26], fullgrid[44], fullgrid[46], fullgrid[48], fullgrid[50], fullgrid[52], fullgrid[54], fullgrid[72], fullgrid[74], fullgrid[76], fullgrid[78], fullgrid[80], fullgrid[82], fullgrid[100], fullgrid[102], fullgrid[104], fullgrid[106], fullgrid[108], fullgrid[110]]
 }
 
 
 function draw() {
 
-    stroke(255), stroke(ROUND), strokeJoin(ROUND), strokeWeight(25)
+    stroke(0), strokeCap(ROUND), strokeJoin(ROUND), strokeWeight(3)
     line(mouseX, mouseY, pmouseX, pmouseY)
 
-    for (let i = 0; i < grid.length; i++) {
-        if (grid[i].hover(mouseX, mouseY)) {
+    for (let i = 0; i < hovergrid.length; i++) {
+
+        if (hovergrid[i].hover(mouseX, mouseY)) {
             console.log("hover on " + i)
 
-            grid[i].display(i)
+            hovergrid[i].display(i)
         }
 
 
@@ -50,6 +98,10 @@ function draw() {
 
 }
 
+
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+}
 
 class area {
 
@@ -58,8 +110,8 @@ class area {
         this.y = y
         this.w = w
         this.h = h
-        this.posx = x + 40
-        this.posy = y + 40
+        this.posx = width - (x + w)
+        this.posy = height / row_num
 
     }
 
@@ -73,18 +125,23 @@ class area {
 
         this.img = document.getElementById("displayedimage")
         this.img.style.display = "block"
-        this.img.style.left = this.posx + "px"
-        this.img.style.top = this.posy + "px"
-        this.img.src = "images/" + number + ".png"
+        this.img.src = "images/" + number + ".jpg"
+        console.log('posX' + this.posx)
+        console.log('posY' + this.posy)
+        this.img.style.right = this.posx + "px"
+        this.img.style.bottom = this.posy + "px"
+
         this.img.alt = picdes[number]
 
 
         this.description = document.getElementById("description")
         this.description.style.display = "block"
         this.description.innerHTML = picdes[number]
-        this.description.style.left = this.posx + "px"
+        this.description.style.right = width - (width / (column_num)) + "px"
+        this.description.style.top = height - (height / (row_num)) + "px"
 
     }
+
 
 
 
