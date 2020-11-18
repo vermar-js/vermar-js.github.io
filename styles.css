@@ -44,6 +44,14 @@ a {
     text-decoration: underline;
 }
 
+#saveimg {
+    display: inline;
+    text-decoration: underline;
+    position: absolute;
+    width: 20%;
+    text-align: right;
+}
+
 #textbio {
     display: none;
 }

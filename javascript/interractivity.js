@@ -37,9 +37,26 @@ function revealbio() {
 
 }
 
+function saveimg() {
+    saveCanvas('drawingcanvas', 'png')
+}
+
 column_num = 14
 row_num = 9
 areanumber = row_num * column_num
+
+
+function preload() {
+
+    loadImage('images/19.jpg')
+    loadImage('images/20.jpg')
+    loadImage('images/21.jpg')
+    loadImage('images/23.jpg')
+
+
+}
+
+
 
 function setup() {
 
@@ -55,7 +72,8 @@ function setup() {
     posxbio = width / (column_num * 2), posybio = height / (row_num * 2);
     bio = document.getElementById("bio").style.left = posxbio + "px"
     bio = document.getElementById("bio").style.top = posybio + "px"
-
+    img = document.getElementById("saveimg").style.top = posybio + "px"
+    img = document.getElementById("saveimg").style.right = width / column_num + "px"
 
 
     let x = 0
@@ -80,10 +98,14 @@ function setup() {
 }
 
 
+
+
+
 function draw() {
 
     stroke(0), strokeCap(ROUND), strokeJoin(ROUND), strokeWeight(3)
     line(mouseX, mouseY, pmouseX, pmouseY)
+
 
     for (let i = 0; i < hovergrid.length; i++) {
 
@@ -130,15 +152,14 @@ class area {
         console.log('posY' + this.posy)
         this.img.style.right = this.posx + "px"
         this.img.style.bottom = this.posy + "px"
-
         this.img.alt = picdes[number]
 
 
         this.description = document.getElementById("description")
         this.description.style.display = "block"
         this.description.innerHTML = picdes[number]
-        this.description.style.right = width - (width / (column_num)) + "px"
-        this.description.style.top = height - (height / (row_num)) + "px"
+        this.description.style.right = width / column_num + "px"
+        this.description.style.top = height - (height / row_num) + "px"
 
     }
 
