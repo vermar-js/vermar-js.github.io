@@ -24,6 +24,19 @@ a {
     color: black;
 }
 
+
+/* 
+img {
+    transition: opacity .4s;
+    opacity: 0;
+    z-index: 1;
+}
+
+img:hover {
+    transition: opacity .2s;
+    opacity: 1;
+} */
+
 .preloader {
     display: none;
 }
@@ -65,6 +78,6 @@ a {
 #description {
     display: none;
     position: absolute;
-    width: 30%;
+    width: 100%;
     text-align: right;
 }

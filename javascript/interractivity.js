@@ -103,12 +103,17 @@ function setup() {
 
 function draw() {
 
+
+    let w = width / column_num
+    let h = height / row_num
+
     stroke(0), strokeCap(ROUND), strokeJoin(ROUND), strokeWeight(3)
     line(mouseX, mouseY, pmouseX, pmouseY)
 
 
     for (let i = 0; i < hovergrid.length; i++) {
-
+        noStroke(), fill(255, 244, 56)
+            //rect(hovergrid[i].x, hovergrid[i].y, w, h)
         if (hovergrid[i].hover(mouseX, mouseY)) {
             console.log("hover on " + i)
 
@@ -148,11 +153,9 @@ class area {
         this.img = document.getElementById("displayedimage")
         this.img.style.display = "block"
         this.img.src = "images/" + number + ".jpg"
-        console.log('posX' + this.posx)
-        console.log('posY' + this.posy)
         this.img.style.right = this.posx + "px"
         this.img.style.bottom = this.posy + "px"
-        this.img.alt = picdes[number]
+            //this.img.alt = picdes[number]
 
 
         this.description = document.getElementById("description")
