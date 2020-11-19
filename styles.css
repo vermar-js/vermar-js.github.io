@@ -88,3 +88,7 @@ img:hover {
     margin: 0%;
     text-align: right;
 }
+
+.texts {
+    z-index: 10;
+}
