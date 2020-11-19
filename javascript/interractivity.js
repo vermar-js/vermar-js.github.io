@@ -69,11 +69,11 @@ function setup() {
 
 
 
-    posxbio = width / (column_num * 2), posybio = height / (row_num * 2);
-    bio = document.getElementById("bio").style.left = posxbio + "px"
-    bio = document.getElementById("bio").style.top = posybio + "px"
-    img = document.getElementById("saveimg").style.top = posybio + "px"
-    img = document.getElementById("saveimg").style.right = width / column_num + "px"
+    // posxbio = width / (column_num * 2), posybio = height / (row_num * 2);
+    // bio = document.getElementById("bio").style.left = posxbio + "px"
+    // bio = document.getElementById("bio").style.top = posybio + "px"
+    // img = document.getElementById("saveimg").style.top = posybio + "px"
+    // img = document.getElementById("saveimg").style.right = width / column_num + "px"
 
 
     let x = 0
@@ -161,8 +161,8 @@ class area {
         this.description = document.getElementById("description")
         this.description.style.display = "inline"
         this.description.innerHTML = picdes[number]
-        this.description.style.right = width / column_num + "px"
-        this.description.style.top = height - (height / row_num) + "px"
+            // this.description.style.right = width / column_num + "px"
+            // this.description.style.top = height - (height / row_num) + "px"
 
     }
 
