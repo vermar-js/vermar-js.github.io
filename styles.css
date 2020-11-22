@@ -21,15 +21,13 @@ body {
 
 a {
     text-decoration: underline;
-    color: black;
 }
 
 
-/* 
-img {
+/* img {
     transition: opacity .4s;
     opacity: 0;
-    z-index: 1;
+  
 }
 
 img:hover {
@@ -73,15 +71,13 @@ img:hover {
     display: none;
 }
 
-#displayedimage {
-    display: none;
-    position: absolute;
-    width: 30%;
-}
-
+#displayedimage,
 #description {
     display: none;
     position: absolute;
+}
+
+#description {
     width: 100%;
     right: 0%;
     bottom: 0%;
