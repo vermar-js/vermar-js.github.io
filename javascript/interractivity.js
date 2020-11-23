@@ -26,19 +26,9 @@ picdes = [
     "Bed between Beds,_ instillation (Hong Kong, 1999)"
 ]
 
-column_num = 14
-row_num = 9
+column_num = 16
+row_num = 10
 areanumber = row_num * column_num
-
-
-// function preload() {
-//     loadImage('images/19.jpg')
-//     loadImage('images/20.jpg')
-//     loadImage('images/21.jpg')
-//     loadImage('images/23.jpg')
-// }
-
-
 
 function setup() {
 
@@ -55,6 +45,7 @@ function setup() {
         var ar = new area(x, y, w, h)
 
         fullgrid.push(ar)
+            // text(i, x, y)
 
         x = x + w
         if (x + w > width) {
@@ -64,7 +55,7 @@ function setup() {
         }
 
     }
-    hovergrid = [fullgrid[16], fullgrid[18], fullgrid[20], fullgrid[22], fullgrid[24], fullgrid[26], fullgrid[44], fullgrid[46], fullgrid[48], fullgrid[50], fullgrid[52], fullgrid[54], fullgrid[72], fullgrid[74], fullgrid[76], fullgrid[78], fullgrid[80], fullgrid[82], fullgrid[100], fullgrid[102], fullgrid[104], fullgrid[106], fullgrid[108], fullgrid[110]]
+    hovergrid = [fullgrid[19], fullgrid[21], fullgrid[23], fullgrid[25], fullgrid[27], fullgrid[29], fullgrid[51], fullgrid[53], fullgrid[55], fullgrid[57], fullgrid[59], fullgrid[61], fullgrid[83], fullgrid[85], fullgrid[87], fullgrid[89], fullgrid[91], fullgrid[93], fullgrid[115], fullgrid[117], fullgrid[119], fullgrid[121], fullgrid[123], fullgrid[125]]
 }
 
 
@@ -119,21 +110,13 @@ class area {
 
         this.img = document.getElementById("displayedimage")
         this.img.style.display = "block"
-        this.img.src = "images/" + number + ".jpg"
+        this.img.src = "images/" + number + ".png"
         this.img.style.top = this.y + "px"
-        this.img.style.left = this.x + "px"
-            // console.log("x", this.x, "y", this.y)
-
+        var currWidth = this.img.clientWidth;
+        this.img.style.left = (this.x - (currWidth / 2)) + "px"
         var des = picdes[number].split("_");
-        //    var dataArr = txt.split(",");
-
-        //    var paragraph = document.getElementById("pid");
-        //    paragraph.innerHTML = dataArr[0]+ " <span>"+dataArr[1]+"</span>";
-
-
         this.description = document.getElementById("description")
         this.description.style.display = "inline"
-
         this.description.innerHTML = "<span style='font-family:sneakitalic'>" + des[0] + "</span>" + des[1];
 
     }
@@ -141,7 +124,7 @@ class area {
 
 
 
-function hiding(number) {
+function hiding() {
     console.log("hiding")
     img = document.getElementById("displayedimage")
     img.style.display = "none"
