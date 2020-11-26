@@ -17,10 +17,12 @@ body {
     color: black;
     overflow: hidden;
     background-color: rgb(237, 247, 248);
+    cursor: url(images/cire.svg), none;
 }
 
 a {
     text-decoration: underline;
+    color: black;
 }
 
 
@@ -75,6 +77,12 @@ img:hover {
     display: none;
     position: absolute;
     max-height: 27%;
+}
+
+#img11 {
+    display: none;
+    width: 100%;
+    align-content: center;
 }
 
 #description {

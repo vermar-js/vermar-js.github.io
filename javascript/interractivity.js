@@ -80,8 +80,13 @@ function draw() {
             //rect(hovergrid[i].x, hovergrid[i].y, hovergrid[i].w, hovergrid[i].h)
 
         if (hovergrid[i].hover(mouseX, mouseY) === true) {
+
+
+
+
             console.log("hover on " + i)
             hovergrid[i].display(i)
+            if (i === 11) { spe_display() }
         }
     }
 
@@ -111,9 +116,15 @@ class area {
         this.img = document.getElementById("displayedimage")
         this.img.style.display = "block"
         this.img.src = "images/" + number + ".png"
+        if (number === 11) {
+            this.img.style.display = "none"
+            this.spe_img = document.getElementById("img11")
+            this.spe_img.style.display = "block"
+        }
         this.img.style.top = this.y + "px"
         var currWidth = this.img.clientWidth;
         this.img.style.left = (this.x - (currWidth / 2)) + "px"
+        this.img.style.maxHeight = "27%"
         var des = picdes[number].split("_");
         this.description = document.getElementById("description")
         this.description.style.display = "inline"
@@ -123,13 +134,19 @@ class area {
 }
 
 
+function spe_display() {
+
+    //spe_img = document.getElementById("img11")
+    // spe_img.style.display = "block"
+}
+
+
 
 function hiding() {
     console.log("hiding")
-    img = document.getElementById("displayedimage")
-    img.style.display = "none"
-    description = document.getElementById("description")
-    description.style.display = "none"
+    document.getElementById("displayedimage").style.display = "none"
+    document.getElementById("description").style.display = "none"
+    document.getElementById("img11").style.display = "none"
 
 }
 

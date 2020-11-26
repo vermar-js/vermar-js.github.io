@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/favicon.ico" />
+    <link rel="mask-icon" href="https://dustinthierry.com/safari-pinned-tab.svg?v=010" color="#5bbad5">
     <!-- you can change the title, will display in the tab  -->
     <title>Pete's website</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -31,14 +32,14 @@
         </p>
     </div>
 
-    <div class="texts" id="saveimg" onclick="saveimg()">Save drawing</div>
+
     <div id=drawingcanvas></div>
 
 
     <img id="displayedimage" onerror="this.onerror=null; this.style.display = 'none'" src="images/1.png">
-
+    <img id="img11" src="images/11.png" onerror="this.onerror=null; this.style.display = 'none'" alt="">
     <p class="texts" id=description>description</p>
-
+    <div class="texts" id="saveimg" onclick="saveimg()">Save drawing</div>
 </body>
 
 </html>
