@@ -1,0 +1,75 @@
+@font-face {
+    font-family: sneakregular;
+    src: url(fonts/Sneak-Regular.ttf)format("truetype");
+}
+
+@font-face {
+    font-family: sneakitalic;
+    src: url(fonts/Sneak-Regular-Italic.otf)format("opentype");
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    font-family: sneakregular;
+    font-size: 10pt;
+    color: black;
+    overflow: hidden;
+    background-color: rgb(237, 247, 248);
+}
+
+.scrolling-div {
+    height: 5%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.scrolling-content {
+    position: relative;
+}
+
+.flexp {
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    justify-content: space-between;
+}
+
+p:hover {
+    font-family: sneakitalic;
+}
+
+img {
+    display: flex;
+    width: 80%;
+    margin-left: 20%;
+}
+
+.project {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.5s;
+    bottom: 3%;
+}
+
+.active,
+.project:hover {
+    font-family: sneakitalic;
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
