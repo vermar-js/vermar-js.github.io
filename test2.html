@@ -44,7 +44,13 @@
 
         <div id=insideright>
 
-            <div id=picture> <img src="images/3.png" alt="img"></div>
+            <div class="picture img1"> </div>
+            <div class="picture img2"> </div>
+            <div class="picture img3"> </div>
+            <div class="picture img4"> </div>
+            <div class="picture img5"> </div>
+
+
 
             <p class="texts" id=description> <span style="font-family: sneakitalic;"> Sleepwalking the Pluriverse, </span> filmed performance (Guangzhou, 2020)</p>
 
@@ -64,7 +70,26 @@
     </script>
 
 
+    <div class="cursor"></div>
 
+    <script>
+        var $cursor = $('.cursor');
+
+        function moveCursor(e) {
+            $cursor.css({
+                "top": e.pageY,
+                "left": e.pageX
+            });
+
+            clearTimeout(timer2);
+
+            var timer2 = setTimeout(function() {
+                $cursor.removeClass('is-moving');
+            }, 300);
+        }
+
+        $(window).on('mousemove', moveCursor);
+    </script>
 
 </body>
 
