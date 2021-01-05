@@ -18,48 +18,52 @@
 
 <body>
 
+    <p class="clicktext" onclick="displaypanelleft()" id=revealbio>Pete Ho Ching Fung</p>
 
+    <div id=panelleft>
 
+        <div id=insideleft>
 
+            <p class="texts" id=textbio>
+                Pete Ho Ching Fung’s situated practice explores the metaphysics of individual and collective lived experiences. Often using ambiguity as an aesthetic strategy, his work seeks to quietly disrupt the single stories of known knowledge(s), social relations,
+                designed environments and technology. The work is materialized in images, words, interventions, curations, collaborations, theoretical and artistic research.
+                <br><br>He holds an MA in Contextual Design from Design Academy Eindhoven and a BA in Critical Design from Emily Carr University of Art and Design. Previously, he co-founded <a class="clicktext" href="https://typhainelegales.github.io/discordantProjects/?fbclid=IwAR3g9oBjexSEgu-vmVIf2Y36xBT_qdePmq5-zkY5HuAOOxvSr8HDmW4VxyM">Discordant Projects</a>,
+                a collective focusing on public engagements, before relocating to the Netherlands. His work has been exhibited, screened and published at Onomatopee, Disegno, Het New Institute, Helsinki Design Museum and Triennale in Milano, among others.
+                <br><br>This site is designed as visual library. For writing please visit, <a class="clicktext" href="http://designforthetimebeing.com/">Design for the Time Being</a>.
+            </p>
 
-    <div class=allprojects>
+            <p class="clicktext" id="seeprojects" onclick="displaypanelright()"> see projects </p>
 
-        <p class=project>Sleepwalking the Pluriverse, filmed performance (Guangzhou, 2020) </p>
-        <div class="panel">
-            <img src="images/3.png" alt="img">
-        </div>
-
-        <p class=project>Eight People with Eight Smartphones Walking Around a Room, film (Eindhoven, 2020) </p>
-        <div class="panel">
-            <img src="images/5.png" alt="img">
-        </div>
-
-        <p class=project>From Here to There,- performance (Eindhoven, 2018) </p>
-        <div class="panel">
-            <img src="images/6.png" alt="img">
         </div>
 
 
     </div>
 
 
+    <div id=panelright>
+
+        <div id=insideright>
+
+            <div id=picture> <img src="images/3.png" alt="img"></div>
+
+            <p class="texts" id=description> <span style="font-family: sneakitalic;"> Sleepwalking the Pluriverse, </span> filmed performance (Guangzhou, 2020)</p>
+
+        </div>
+
+    </div>
+
+
     <script>
-        var acc = document.getElementsByClassName("project");
-        var i;
+        function displaypanelleft() {
+            document.getElementById("panelleft").style.height = "100%";
+        }
 
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-
-                } else {
-                    panel.style.maxHeight = "90%";
-                }
-            });
+        function displaypanelright() {
+            document.getElementById("panelright").style.height = "100%";
         }
     </script>
+
+
 
 
 </body>
