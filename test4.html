@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pete ho chi fung</title>
+    <!-- link of icon -->
+    <!-- <link rel="icon" type="image/png" href="assets/Mat_Color.png"> -->
+    <link rel="stylesheet" href="styletest4.css" type="text/css">>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+    <script src="script/main.js" defer></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- left part of page (menu) -->
+    <header id=leftpart>
+
+        <p class="links" onclick="displaypanelleft()" id=name>Pete Ho Ching Fung</p>
+
+        <div class="info" id="left">
+
+            <div class="containerleft">
+
+                <p class=bio>
+
+                    Pete Ho Ching Fung’s situated practice explores the metaphysics of individual and collective lived experiences. Often using ambiguity as an aesthetic strategy, his work seeks to quietly disrupt the single stories of known knowledge(s), social relations,
+                    designed environments and technology. The work is materialized in images, words, interventions, curations, collaborations, theoretical and artistic research.
+
+                    <br><br>He holds an MA in Contextual Design from Design Academy Eindhoven and a BA in Critical Design from Emily Carr University of Art and Design. Previously, he co-founded
+                    <a class="links" href="https://typhainelegales.github.io/discordantProjects/?fbclid=IwAR3g9oBjexSEgu-vmVIf2Y36xBT_qdePmq5-zkY5HuAOOxvSr8HDmW4VxyM">
+                        DiscordantProjects</a>, a collective focusing on public engagements, before relocating to the Netherlands. His work has been exhibited, screened and published at Onomatopee, Disegno, Het New Institute, Helsinki
+                    Design Museum and Triennale in Milano, among others.
+
+                    <br><br>This site is designed as visual library. For writing please visit,
+                    <a class="links" href="http://designforthetimebeing.com/">Design for the Time Being</a>.
+
+                </p>
+
+                <!-- <p class="links" id="seeprojects" onclick="displaypanelright()"> see projects </p> -->
+                <div class=projectlist>
+                    <div class="projects" onclick="displaypanelright()">
+                        <a href="#sleepwalking">Sleepwalking the Pluriverse, filmed performance (Guangzhou, 2020)</a>
+                    </div>
+
+
+                    <div class="projects" onclick="displaypanelright()">
+                        <a href="#boring">Boring Events Inbetween, digtial photograph (Eindhoven, 2019)</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- right part of page (menu) -->
+
+
+    <main id=right>
+
+        <!--projects-->
+        <li class="project-item" id="sleepwalking">
+            <div class="content">
+
+
+
+                <p class="description">
+                    <span style="font-family: sneakitalic;">Sleepwalking the Pluriverse,
+                    </span>filmed performance (Guangzhou, 2020)
+                </p>
+
+
+
+                <img class="picture" src="images/0.png">
+                <img class="picture" src="images/1.png">
+                <img class="picture" src="images/2.png">
+                <img class="picture" src="images/3.png">
+                <img class="picture" src="images/4.png">
+                <div id=scrollpicture> </div>
+
+            </div>
+        </li>
+
+        <li class="project-item" id="boring">
+            <div class="content">
+
+                <p class="description">
+                    <span style="font-family: sneakitalic;">Boring Events Inbetween,
+                    </span>digtial photograph (Eindhoven, 2019)
+                </p>
+
+
+                <img class="picture" src="images/12.png">
+                <img class="picture" src="images/13.png">
+                <img class="picture" src="images/14.png">
+                <img class="picture" src="images/15.png">
+
+
+            </div>
+        </li>
+
+
+    </main>
+
+
+
+
+
+    <div id="cursor"></div>
+
+    <script>
+        $(document).mousemove(function(e) {
+
+            const cursor = $('#cursor');
+            const target = $(event.target);
+
+            // update position of cursor
+            cursor.css('left', e.clientX).css('top', e.clientY);
+
+            const isLinkTag = target.is('a');
+            const isHovered = cursor.hasClass('hoveredCursor');
+
+            // toggle the cursor class if necessary 
+            if (isLinkTag && !isHovered) {
+
+                cursor.addClass('hoveredCursor');
+
+            } else if (!isLinkTag && isHovered) {
+
+                cursor.removeClass('hoveredCursor');
+
+            }
+
+        });
+
+        $(document).mouseleave(function(e) {
+
+            const cursor = $('#cursor');
+            cursor.hide()
+
+        });
+
+        $(document).mouseenter(function(e) {
+
+            const cursor = $('#cursor');
+            cursor.show()
+
+        })
+    </script>
+
+
+    <script>
+        // we will add this content, replace for anything you want to add
+    </script>
+
+</body>
+
+</html>
