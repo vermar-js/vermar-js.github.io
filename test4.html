@@ -7,7 +7,7 @@
     <title>pete ho chi fung</title>
     <!-- link of icon -->
     <!-- <link rel="icon" type="image/png" href="assets/Mat_Color.png"> -->
-    <link rel="stylesheet" href="styletest4.css" type="text/css">>
+    <link rel="stylesheet" href="styletest4.css" type="text/css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
     <script src="script/main.js" defer></script>
@@ -18,18 +18,17 @@
 <body>
 
     <!-- left part of page (menu) -->
+    <p class="links" onclick="displaypanelleft()" id=name>Pete Ho Ching Fung</p>
+
     <header id=leftpart>
 
-        <p class="links" onclick="displaypanelleft()" id=name>Pete Ho Ching Fung</p>
 
         <div class="info" id="left">
 
             <div class="containerleft">
 
-                <p class=bio>
-
-                    Pete Ho Ching Fung’s situated practice explores the metaphysics of individual and collective lived experiences. Often using ambiguity as an aesthetic strategy, his work seeks to quietly disrupt the single stories of known knowledge(s), social relations,
-                    designed environments and technology. The work is materialized in images, words, interventions, curations, collaborations, theoretical and artistic research.
+                <p class=bio>Pete Ho Ching Fung’s situated practice explores the metaphysics of individual and collective lived experiences. Often using ambiguity as an aesthetic strategy, his work seeks to quietly disrupt the single stories of known knowledge(s),
+                    social relations, designed environments and technology. The work is materialized in images, words, interventions, curations, collaborations, theoretical and artistic research.
 
                     <br><br>He holds an MA in Contextual Design from Design Academy Eindhoven and a BA in Critical Design from Emily Carr University of Art and Design. Previously, he co-founded
                     <a class="links" href="https://typhainelegales.github.io/discordantProjects/?fbclid=IwAR3g9oBjexSEgu-vmVIf2Y36xBT_qdePmq5-zkY5HuAOOxvSr8HDmW4VxyM">
@@ -65,7 +64,7 @@
     <main id=right>
 
         <!--projects-->
-        <li class="project-item" id="sleepwalking">
+        <div class="project-item" id="sleepwalking">
             <div class="content">
 
 
@@ -85,9 +84,9 @@
                 <div id=scrollpicture> </div>
 
             </div>
-        </li>
+        </div>
 
-        <li class="project-item" id="boring">
+        <div class="project-item" id="boring">
             <div class="content">
 
                 <p class="description">
@@ -103,7 +102,7 @@
 
 
             </div>
-        </li>
+        </div>
 
 
     </main>
@@ -154,10 +153,6 @@
         })
     </script>
 
-
-    <script>
-        // we will add this content, replace for anything you want to add
-    </script>
 
 </body>
 
