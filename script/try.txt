@@ -1,3 +1,0 @@
-hide img + text
-italic/underline description (before, )
-

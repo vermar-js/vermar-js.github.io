@@ -3,43 +3,1283 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="/favicon.ico" />
-    <link rel="mask-icon" href="https://dustinthierry.com/safari-pinned-tab.svg?v=010" color="#5bbad5">
-    <!-- you can change the title, will display in the tab  -->
-    <title>Pete's website</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+    <!-- Tab text (description) -->
+    <title>marie verdeil</title>
+    <!-- link of icon -->
+    <!-- <link rel="icon" href="assets/other/favicon.ico" type="image/x-icon" /> -->
 
-    <!-- link to my javascript and css file -->
-    <script src="javascript/interractivity.js"></script>
-    <link href="styles.css" rel="stylesheet" type="text/css">
+    <!-- link to Css file (style, layout of page), JQuery javascript library and JS file (Jquery must be before Js bc it's called in the main.js)-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="main.js" defer></script>
 </head>
 
 
 <body>
-    <div class="preloader"> <img src="images/0.png"> <img src="images/1.png"> <img src="images/2.png"> <img src="images/3.png"> <img src="images/4.png"> <img src="images/5.png"> <img src="images/6.png"> <img src="images/7.png"> <img src="images/8.png"> <img src="images/9.png">        <img src="images/10.png"> <img src="images/11.png"> <img src="images/12.png"> <img src="images/13.png"> <img src="images/14.png"> <img src="images/15.png"> <img src="images/16.png"> <img src="images/17.png"> <img src="images/18.png"> <img src="images/19.png">        <img src="images/20.png"> <img src="images/21.png"> <img src="images/22.png"> <img src="images/23.png"> </div>
 
-    <div class="texts" id="bio">
+    <!-- menu page -->
+    <div class=MenuMaster>
+        <div class="MenuGrid-container">
 
-        <p onclick="revealbio()" id=revealbio>Pete Ho Ching Fung</p>
-        <p id=textbio>
-            ’s situated practice explores the metaphysics of individual and collective lived experiences. Often using ambiguity as an aesthetic strategy, his work seeks to quietly disrupt the single stories of known knowledge(s), social relations, designed environments
-            and technology. The work is materialized in images, words, interventions, curations, collaborations, theoretical and artistic research.
-            <br><br>He holds an MA in Contextual Design from Design Academy Eindhoven and a BA in Critical Design from Emily Carr University of Art and Design. Previously, he co-founded <a href="https://typhainelegales.github.io/discordantProjects/?fbclid=IwAR3g9oBjexSEgu-vmVIf2Y36xBT_qdePmq5-zkY5HuAOOxvSr8HDmW4VxyM">Discordant Projects</a>,
-            a collective focusing on public engagements, before relocating to the Netherlands. His work has been exhibited, screened and published at Onomatopee, Disegno, Het New Institute, Helsinki Design Museum and Triennale in Milano, among others.
-            <br><br>This site is designed as visual library. For writing please visit, <a href="http://designforthetimebeing.com/">Design for the Time Being</a>.
-        </p>
+            <a href="#1-1" class="MenuGrid-item" id=m-item-text1>
+                This website is a Work In Progress (last update April 2021).
+              
+            </a>
+
+            <a href="#1-2" id=m-item-text2 class="MenuGrid-item">
+                Marie Verdeil is a (french) design student in the third year of her education at the 
+                Design Academy Eindhoven (NL). She is currently looking for an internship for the period of autumn
+                2021 (starting Aug-Sep-Oct; ending Dec-Jan-Feb).
+            </a>
+
+            <a href="#1-3" id=m-item-text3 class="MenuGrid-item">
+
+                <br> Her work gravitates around mediumm such as webdesign, image production, 3D software, creative coding, structure building.
+            </a>
+
+            <a href="#1-4" id=m-item-text4 class="MenuGrid-item">
+                At the moment, she is building a treehouse in a network (with Anna Mareschal de Charentenay) and
+                exploring the means of interractive sound making in a group.
+            </a>
+
+            <a href="#1-5" id=m-item-text5 class="MenuGrid-item">
+                You can contact her by <span id=email > email</span> or see her <span id=instagram >instagram page</span>. She speaks fluently french and english.
+            <br><br> </span> 
+            
+            </a>
+
+
+            <a href="#2-1" id=m-item-img1 class="MenuGrid-item pic">
+            </a>
+
+            <a href="#2-2" id=m-item-img2 class="MenuGrid-item pic">
+            </a>
+
+            <a href="#2-3" id=m-item-img3 class="MenuGrid-item pic">
+            </a>
+
+            <a href="#2-4" id=m-item-img4 class="MenuGrid-item pic">
+            </a>
+
+            <a href="#2-5" id=m-item-void1 class="MenuGrid-item pic">
+            </a>
+
+
+            <a href="#3-1" id=m-item-img5 class="MenuGrid-item pic">
+            </a>
+
+            <a href="#3-2" id=m-item-img6 class="MenuGrid-item pic">
+            </a>
+
+            <a href="#3-3" id=m-item-img7 class="MenuGrid-item pic">
+            </a>
+
+            <a href="#3-4" id=m-item-img8 class="MenuGrid-item pic">
+            </a>
+
+            <a href="#3-5" id=m-item-img9 class="MenuGrid-item pic">
+            </a>
+
+
+            <a href="#4-1" id=m-item-img10 class="MenuGrid-item pic">
+            </a>
+
+            <a href="#4-2" id=m-item-img11 class="MenuGrid-item pic">
+            </a>
+
+            <a href="#4-3" id=m-item-img12 class="MenuGrid-item pic">
+            </a>
+
+            <a href="#4-4" id=m-item-img13 class="MenuGrid-item pic">
+            </a>
+
+            <a href="#4-5" id=m-item-void2 class="MenuGrid-item">
+            </a>
+
+            <a href="#5-1" id=m-item-void3 class="MenuGrid-item">
+            </a>
+
+            <a href="#5-2" id=m-item-void4 class="MenuGrid-item">
+            </a>
+
+            <a href="#5-3" id=m-item-void5 class="MenuGrid-item">
+            </a>
+
+            <a href="#5-4" id=m-item-img14 class="MenuGrid-item pic">
+            </a>
+
+            <a href="#5-5" id=m-item-text6 class="MenuGrid-item">
+                Marie Verdeil - 2021 - &#169;
+            </a>
+
+        </div>
+    </div>
+    <!-- project pages -->
+
+
+    <div class=ProjectMaster>
+
+        <div id=home-phone class=phone>
+            <a class=all-arrows id=arrow-bottom href="#home">
+                <p class=arrow><span id=des-bottom>back to overview</span> <br> &darr;
+                </p>
+            </a>
+        </div>
+
+        <div class="ProjectGrid-container" id=1-1>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#home">
+                    <p class=arrow> &uarr; <br> <span id=des-top>back to overview</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#home">
+                    <p class=arrow id=left-text> <span id=des-left>back to overview</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#1-2">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>about me</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#2-1">
+                    <p class=arrow><span id=des-bottom>river banks</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item special">
+                This website is a Work In Progress (last update April 2021).
+
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+                <div class=title-text> <br><br></div>
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+                <div class=description-text></div>
+            </div>
+
+        </div>
+
+        <div class="ProjectGrid-container" id=1-2>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#home">
+                    <p class=arrow> &uarr; <br> <span id=des-top>back to overview</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#1-1">
+                    <p class=arrow id=left-text> <span id=des-left>this website</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#1-3">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>my work</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#2-2">
+                    <p class=arrow><span id=des-bottom>to survive</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item">
+                Marie Verdeil is a (french) design student in the third year of her education at the <a href="https://designacademy.nl/">Design Academy Eindhoven </a> (NL). She is currently looking for an internship for the period of autumn 2021 (starting
+                Aug-Sep-Oct; ending Dec-Jan-Feb).
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+                <div class=title-text> <br><br></div>
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+                <div class=description-text></div>
+            </div>
+
+        </div>
+
+        <div class="ProjectGrid-container" id=1-3>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#home">
+                    <p class=arrow> &uarr; <br> <span id=des-top>back to overview</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#1-2">
+                    <p class=arrow id=left-text> <span id=des-left>about me</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#1-4">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>at the moment</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#2-3">
+                    <p class=arrow><span id=des-bottom>un-natural illusions</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item">
+                She is interested in the infrastructures, mechanisms and challenges; social, geopolitical, topological, global and/or local posed by technology nowadays. <br> Her work gravitates around mediumm such as webdesign, image production, 3D software,
+                creative coding, structure building.
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+                <div class=title-text> </div>
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+                <div class=description-text> </div>
+            </div>
+
+        </div>
+
+        <div class="ProjectGrid-container" id=1-4>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#home">
+                    <p class=arrow> &uarr; <br> <span id=des-top>back to overview</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#1-3">
+                    <p class=arrow id=left-text> <span id=des-left>my work</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#1-5">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>get in touch</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#2-4">
+                    <p class=arrow><span id=des-bottom>un-polished land</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item">
+                At the moment, she is building a treehouse in a network (with Anna Mareschal de Charentenay) and exploring the means of interractive sound making in a group.
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+                <div class=title-text></div>
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+                <div class=description-text> </div>
+            </div>
+
+        </div>
+
+        <div class="ProjectGrid-container" id=1-5>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#home">
+                    <p class=arrow> &uarr; <br> <span id=des-top>back to overview</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#1-4">
+                    <p class=arrow id=left-text> <span id=des-left>at the moment</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#home">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>back to
+                            overview</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#2-5">
+                    <p class=arrow><span id=des-bottom>click twice</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item">
+                You can contact her by <a id=email href="mailto:marie.verdeil@gmail.com">email</a> or see her <a id=instagram href="https://www.instagram.com/marie_verdeil/">instagram page</a> . She speaks fluently french and english.
+                <br><br>
+                <p>CV
+                    <br>
+                    <br> Education <br> 2019-2020; BA (Media and Culture) at <a href="https://designacademy.nl/">Design Academy Eindhoven </a> (NL). <br> 2018-2019; Propedeutic year at Design Academy Eindhoven (NL). <br> 2015-2018; Applied Arts Highschool
+                    Degree at <a href="https://ecole-boulle.org/">Ecole Boulle </a> (FR), graduated with honours. <br>
+                    <br> <br> Experience <br> 2020-Ongoing; Freelance web development for websites in the Design/Art field. See selected works/collaboration: <a href="https://elevatorradio.network/">www.elevatorradio.network </a>, <a href=http://milesworner.net/;>www.milesworner.net</a>,
+                    <a href="https://thesurfactantcontinuum.online/>www.thesurfactantcontinuum.online">thesurfactantcontinuum.online</a>.
+                    <br> 2019-2021; Graphic design, communication and organisation for the DAE Lecture Series (DAE public program). <br> 2019-2021; Host, service and sale for the Zbar, DAE, DDW, etc. <br> 2019; Youth worker diploma (BAFA in France).
+                    <br> 2016-2018; Student Council member at Ecole Boulle (FR). <br>
+                    <br> <br> Exhibition&Features <br> May 2021; Exhibition and publication feature as part of the <a href="https://www.onomatopee.net/exhibition/meeting-grounds/"> Meeting Ground #4 by Onomatopee </a> . <br> March 2021; Interview <a href="https://www.designacademy.nl/p/research-and-debate/dae-lecture-series/touching-base-on-reality-a-conversation-with-eliott-tsaramaro-marie-verdeil-and-paula-chang-of-the-dae-lecture-committee"> “Touching Base On Reality”</a>                    as part of the DAE Lecture Committee.
+                    <br> Dec 2020; Group exhibition “We’ve Never Cycled to Dylan’s” at De Fabriek, Eindhoven (NL).
+                    <br> Dec 2019; Group exhibition “Underexposed Underground” at De Fabriek, Eindhoven (NL). <br>
+                    <br> <br> Skills <br> Work organisation; event organisation, team work, autonomous working, concept, critical thinking. <br> Digital; AdobeSuite (Photoshop, InDesign, Premiere, Illustrator), 3d software (C4D, Blender, Rhino), creative
+                    coding (P5.js, Processing, Arduino), web development (HTML, CSS, JS), Office. <br> Hands-on; Wood building, Sewing, Electronics. <br>
+                </p>
+
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+                <div class=title-text> </div>
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+                <div class=description-text> </div>
+            </div>
+
+        </div>
+
+        <div class="ProjectGrid-container" id=2-1>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#1-1">
+                    <p class=arrow> &uarr; <br> <span id=des-top>the website...</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#home">
+                    <p class=arrow id=left-text> <span id=des-left>back to overview</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#2-2">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>hypothetical survival</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#3-1">
+                    <p class=arrow><span id=des-bottom>site-specific</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item with_img">
+
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+                <div class=title-text>discover the Dommel, map(s), 2019.</div>
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+                <div class=description-text>
+                    A series of map witness my slow investigation of the Dommel river, in Eindhoven (NL). This last map is designed as a continuous exploratory tool; both of the physical space and the mythological space. In the form of an interactive guide for a walk along
+                    the river, it gathers people’s stories and attempts to compose the collective knowledge around the river.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ProjectGrid-container" id=2-2>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#1-2">
+                    <p class=arrow> &uarr; <br> <span id=des-top>about me...</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#2-1">
+                    <p class=arrow id=left-text> <span id=des-left>empirical map</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#2-3">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>the fake</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#3-2">
+                    <p class=arrow><span id=des-bottom>ultra local trees</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item with_img">
+
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+                <div class=title-text>Learn Now, Survive Later, Publication, 2019.</div>
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+                <div class=description-text>This publication is the outcome of an extensive investigation in the Preppers subculture online. This community, which mainly exists on Facebook groups, forums and blogs focusses on Prepping - (...) storing food, water and weapons as well
+                    as developping self-sufficiency skills for the purpose of independently surviving disasters”. The book acts as a guide to prepping and navigating survival-centered forums, but also offers a critical yet empathic look at the radical
+                    practices and ideology advertised by the members. </div>
+            </div>
+
+        </div>
+
+        <div class="ProjectGrid-container" id=2-3>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#1-3">
+                    <p class=arrow> &uarr; <br> <span id=des-top>and my work...</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#2-2">
+                    <p class=arrow id=left-text> <span id=des-left>ideal wilderness</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#2-4">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>technological landscape</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#3-3">
+                    <p class=arrow><span id=des-bottom>low-tech altar</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item with_img">
+
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+                <div class=title-text> Fake nature, Publication, 2020</div>
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+                <div class=description-text>Gathering a collection of found images - later digitally altered - this publication casts a sarcastic glance on artificial nature, from idyllic jungle-themed wallpaper to cactus-shaped phone antenna. It questions current representations
+                    of nature and the way they affect our relation to it. </div>
+            </div>
+
+        </div>
+
+        <div class="ProjectGrid-container" id=2-4>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#1-4">
+                    <p class=arrow> &uarr; <br> <span id=des-top>at the moment...</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#2-3">
+                    <p class=arrow id=left-text> <span id=des-left>natural set-up</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#2-5">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>nothing yet</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#3-4">
+                    <p class=arrow><span id=des-bottom>digital image</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item with_img">
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+                <div class=title-text>Publication, 2020</div>
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+                <div class=description-text> A printed visual collection with a focus on recent technology serving as an interface through which we look at nature. Later composed in a publication (found images, google street view, personal archive, etc.) </div>
+            </div>
+
+        </div>
+
+        <div class="ProjectGrid-container" id=2-5>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#1-5">
+                    <p class=arrow> &uarr; <br> <span id=des-top>get in touch!</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#2-4">
+                    <p class=arrow id=left-text> <span id=des-left>machines in nature</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#home">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>back to overview</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#3-5">
+                    <p class=arrow><span id=des-bottom>technology and politics</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i>Nothing here yet.
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+                <div class=title-text> </div>
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+                <div class=description-text> </div>
+            </div>
+
+        </div>
+
+        <div class="ProjectGrid-container" id=3-1>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#2-1">
+                    <p class=arrow> &uarr; <br> <span id=des-top>being on location</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#home">
+                    <p class=arrow id=left-text> <span id=des-left>back to overview</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#3-2">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>in the trees</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#4-1">
+                    <p class=arrow><span id=des-bottom>for friends</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item with_img">
+
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+                <div class=title-text>Hut in garden, 2020.</div>
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+                <div class=description-text>Originally the idea of building a cabane (french translation for hut, shelter) came during the time i have spent at the summer house of my family in the Cevennes, in the south of France. Using the resources of the garden and its surrounding
+                    properties, this hut was designed to be easily dismantled and rebuilt according to the season. The project offered a space for all visitors, friends and family to participate in their own way. Thus allowed us to reappropriate making
+                    after months of lockdown. (in addition, WIP)I am currently in the process of designing an informative and appreciative poster that will be hand back to all participants.</div>
+            </div>
+
+        </div>
+
+        <div class="ProjectGrid-container" id=3-2>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#2-2">
+                    <p class=arrow> &uarr; <br> <span id=des-top>romantic survival</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#3-1">
+                    <p class=arrow id=left-text> <span id=des-left>(re)appropriate making</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#3-3">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>technological shelter</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#4-2">
+                    <p class=arrow><span id=des-bottom>local server</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item with_img">
+
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+                <div class=title-text>(Work in Progress) Faire Cabane, 2021 - Ongoing. <br> featured and exhibited in <a href="https://www.onomatopee.net/exhibition/meeting-grounds/" target="_blank"> Meeting Ground #4 by Onomatopee</a> </div>
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+                <div class=description-text>In collaboration with <a href="https://www.instagram.com/annadecharentenay/" target="_blank">Anna Marechal de Charentenay</a>, the project aims to explore the potential of treehouse building as a method to forster togetherness, (re)intergrate
+                    one's local environnement and think collaboratively.</div>
+            </div>
+
+        </div>
+
+        <div class="ProjectGrid-container" id=3-3>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#2-3">
+                    <p class=arrow> &uarr; <br> <span id=des-top>artificial nature</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#3-2">
+                    <p class=arrow id=left-text> <span id=des-left>platform network</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#3-4">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>abstracted land</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#4-3">
+                    <p class=arrow><span id=des-bottom>(re)created geography</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item with_img">
+
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+                <div class=title-text> Installation, 2020. Wooden pallets, printed tarp, bike inner tubes, bike wheel and pedal, electrical cables, electronic parts, compost. <br> <br> exhibited at <a href="https://www.defabriekeindhoven.com/en/node/7590" target="_blank">De Fabriek Eindhoven</a>                    (dec. 2020)
+                </div>
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+                <div class=description-text> <span style="font-style: italic;"> Put in motion by a pedal, the wheel triggers the motor with a rubber belt; the electricity produced is monitored by a multimeter; a small lamp lights up.</span> The structure composed of everyday material
+                    is an interactive space for exploration. Its existence, between a shelter and a lab, questions our relation to nature in an increasingly globalised and networked world. In a situation of uncertainty where growing environmental concerns
+                    emerge, this installation aims to bring forward an alternative approach to technology; low-tech, as opposed to high-tech. It encourages the (re)appropriation of our daily technical devices through a “DIY” approach - one that is local,
+                    circular and self-sufficient.</div>
+            </div>
+
+        </div>
+
+        <div class="ProjectGrid-container" id=3-4>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#2-4">
+                    <p class=arrow> &uarr; <br> <span id=des-top>contemporary land</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#3-3">
+                    <p class=arrow id=left-text> <span id=des-left>anthropocene theater</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#3-5">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>opaque satellite</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#4-4">
+                    <p class=arrow><span id=des-bottom>processed representation</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item with_img">
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+                <div class=title-text>What the pixel hides, Website experiment, 2021.<br><br>
+                    <a href="whatthepixelhides/satellite.html" target="_blank">visit the website</a> </div>
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+                <div class=description-text> Google Street View, artificial landscapes or satellite imagery: nowadays, we look at nature through interface, machine legible translation of images. These new representations use a form language made of numbers, algorithms and vectors;
+                    they see beyond human eyes but are limited by their encoding system. In a form of a website which uses a program to generate satellite imagery from onsite pictures, the user is invited to explore the agency of the pixel: the smallest
+                    element of the image - and reflects on how it affects and abstracts our perception of nature. </div>
+            </div>
+
+        </div>
+
+        <div class="ProjectGrid-container" id=3-5>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#2-5">
+                    <p class=arrow> &uarr; <br> <span id=des-top>click twice</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#3-4">
+                    <p class=arrow id=left-text> <span id=des-left>zooming in</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#home">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>back to overview</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#4-5">
+                    <p class=arrow><span id=des-bottom>nothing yet</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item with_img">
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+                <div class=title-text>Opaque Technology - Infrastructure and Politics of the Satellite Image, Essay, 2021. <br><br>
+                    <a href="https://drive.google.com/file/d/1dZmE32dTwWvzNap7cMJKDQVB50lM8tc-/view?usp=sharing" target="_blank">read PDF</a> </div>
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+                <div class=description-text> This essay explores the history, production, characteristics, politics and societal implications of sateliite imagery. The research served as a ground base for the production of the website "What the pixel hides - satellite.lab".</div>
+            </div>
+
+        </div>
+
+        <div class="ProjectGrid-container" id=4-1>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#3-1">
+                    <p class=arrow> &uarr; <br> <span id=des-top>with family</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#home">
+                    <p class=arrow id=left-text> <span id=des-left>back to overview</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#4-2">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>participatory performance</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#5-1">
+                    <p class=arrow><span id=des-bottom>nothing yet</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <a href="http://www.pressaletter.online/" target="_blank" id=center-i class="ProjectGrid-item with_img toclick">
+
+            </a>
+            <div id=title-i class="ProjectGrid-item">
+                <div class=title-text>www.pressaletter.online, 2019-2021. <br><br><a href="http://www.pressaletter.online/">visit the website</a></div>
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+                <div class=description-text>pressaletter.online is an internet based, computer generated alphabet with a simple geometrical structure which evolves based on the user input. Inspired by the uprising of open-type fonts and other variable typefaces, the alphabet aims
+                    to explore the potential of modular letters outside of the strict framework of softwares and file formats. In the radical rectangular grid, the alphabet unfolds - becomes slimmer or thicker - depending on the user’s movement on the
+                    screen. Each letter consists of a minimal and singular combination of rectangle and parallelogram. This minimal vocabulary allows the letters to have a strong coherency while being in constant motion. A type processor available on
+                    the website allows the user to play and compose poster with the alphabet.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ProjectGrid-container" id=4-2>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#3-2">
+                    <p class=arrow> &uarr; <br> <span id=des-top>local node</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#4-1">
+                    <p class=arrow id=left-text> <span id=des-left>interractive creation</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#4-3">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>augmented souvenir</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#5-2">
+                    <p class=arrow><span id=des-bottom>nothing yet</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item with_img">
+
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+                <div class=title-text>(Work In Progress) In House Quartet Live Show, Performance, 2021 - Ongoing. <br> <br> <a href="https://vimeo.com/549299771" target="_blank">watch here.</a>
+                </div>
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+                <div class=description-text>In collaboration with some classmates; I am exploring the making of sound as an interractive and collective experience. In a performance, 4 computers are connected and send keyboard inputs to a server; each letter plays a specific sounds,
+                    allowing the 4 users to collectively compose a piece based a pre-recorded household sounds. However, a glitch occurs; distorts and delays the outputed sounds.
+                </div>
+
+            </div>
+        </div>
+        <div class="ProjectGrid-container" id=4-3>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#3-3">
+                    <p class=arrow> &uarr; <br> <span id=des-top>being "in nature"</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#4-2">
+                    <p class=arrow id=left-text> <span id=des-left>connected composition</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#4-4">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>digital language</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#home">
+                    <p class=arrow><span id=des-bottom>nothing yet</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item with_img">
+
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+                <div class=title-text> Pinkland Remémoire, Video, 3D Render, 2020. <br><br><a href="https://www.youtube.com/watch?v=bbIkROoQ_7U" target="_blank">watch here.</a></div>
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+                <div class=description-text> This video takes my phone photo gallery as a material to recreate souvenir in a 3D environment. Some personnal photographs of Camargue get distorted, simulated, extruded, subdivided and finally rendered in order to accurately (and subjectively)
+                    depict my experience of the landscape and atmosphere. </div>
+            </div>
+        </div>
+
+        <div class="ProjectGrid-container" id=4-4>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#3-4">
+                    <p class=arrow> &uarr; <br> <span id=des-top>remote topology</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#4-3">
+                    <p class=arrow id=left-text> <span id=des-left>photo gallery</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#4-5">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>nothing yet</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#5-4">
+                    <p class=arrow><span id=des-bottom>see more of the project</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item with_img">
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+                <div class=title-text>UV-printed Visual Series, 2020. <br><br>with the help of <a href="https://www.instagram.com/petervanede/" target="_blank">Peter Van Ede</a></div>
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+                <div class=description-text>Using photography, creative coding and image processing softwares, this visual series focusses on the creation process of digital images. By iterating the same images into different encoding systems, pixel sorting algorithm, repeteated
+                    photography, bitmap process and ASCII generation - the represented nature transforms.</div>
+            </div>
+
+        </div>
+
+        <div class="ProjectGrid-container" id=4-5>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#3-5">
+                    <p class=arrow> &uarr; <br> <span id=des-top>technology and politics</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#4-4">
+                    <p class=arrow id=left-text> <span id=des-left>through screens</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#home">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>back to overview</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#5-5">
+                    <p class=arrow><span id=des-bottom>nothing yet</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item">Nothing here yet.
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+            </div>
+
+        </div>
+
+        <div class="ProjectGrid-container" id=5-1>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#4-1">
+                    <p class=arrow> &uarr; <br> <span id=des-top>moving letters</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#home">
+                    <p class=arrow id=left-text> <span id=des-left>back to overview</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#5-2">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>nothing yet</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#home">
+                    <p class=arrow><span id=des-bottom>back to overview</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item">Nothing here yet.
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+            </div>
+        </div>
+
+        <div class="ProjectGrid-container" id=5-2>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#4-2">
+                    <p class=arrow> &uarr; <br> <span id=des-top>with the machine</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#5-1">
+                    <p class=arrow id=left-text> <span id=des-left>nothing yet</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#5-3">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>nothing yet</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#home">
+                    <p class=arrow><span id=des-bottom>back to overview</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item">Nothing here yet.
+
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+            </div>
+
+        </div>
+
+        <div class="ProjectGrid-container" id=5-3>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#4-3">
+                    <p class=arrow> &uarr; <br> <span id=des-top>blender summer</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#5-2">
+                    <p class=arrow id=left-text> <span id=des-left>nothing yet</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#5-4">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>encoded pixel</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#home">
+                    <p class=arrow><span id=des-bottom>back to overview</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item">Nothing here yet.
+
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+            </div>
+        </div>
+
+        <div class="ProjectGrid-container" id=5-4>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#4-4">
+                    <p class=arrow> &uarr; <br> <span id=des-top>see more of the project</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#5-3">
+                    <p class=arrow id=left-text> <span id=des-left>nothing yet</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#5-5">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>nothing yet</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#home">
+                    <p class=arrow><span id=des-bottom>back to overview</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item with_img">
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+                <div class=title-text>Animated Pixel Series, 2020.</div>
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+                <div class=description-text>Using photography, creative coding and image processing softwares, this visual series focusses on the creation process of digital images. By iterating the same images into different encoding systems, pixel sorting algorithm, repeteated
+                    photography, bitmap process and ASCII generation - the represented nature transforms.</div>
+            </div>
+
+        </div>
+
+        <div class="ProjectGrid-container" id=5-5>
+            <div id=north-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-top href="#4-5">
+                    <p class=arrow> &uarr; <br> <span id=des-top>click twice</span>
+                    </p>
+                </a>
+            </div>
+            <div id=west-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-left href="#5-4">
+                    <p class=arrow id=left-text> <span id=des-left>encoded pixel</span> <br>&uarr;
+                    </p>
+                </a>
+            </div>
+
+            <div id=east-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-right href="#home">
+
+                    <p class=arrow id=right-text>&uarr;<br> <span id=des-right>back to overiew</span>
+                    </p>
+                </a>
+
+            </div>
+            <div id=south-i class="ProjectGrid-item">
+                <a class=all-arrows id=arrow-bottom href="#home">
+                    <p class=arrow><span id=des-bottom>back to overview</span> <br> &darr;
+                    </p>
+                </a>
+            </div>
+
+
+            <div id=center-i class="ProjectGrid-item">
+                Marie Verdeil - 2021 - &#169;
+            </div>
+
+            <div id=title-i class="ProjectGrid-item">
+            </div>
+
+            <div id=description-i class="ProjectGrid-item">
+            </div>
+
+        </div>
+        <div style="display: none;" id=full_bio>
+            This website is a Work In Progress (last update April 2021). <br> Marie Verdeil is a (french) design student in the third year of her education at the Design Academy Eindhoven (NL). She is currently looking for an internship for the period
+            of autumn 2021 (starting Aug-Sep-Oct; ending Dec-Jan-Feb). <br> She is interested in the infrastructures, mechanisms and challenges, may they be social, geopolitical, topological, global and/or posed by technology nowadays.
+            <br> <br> Her work gravitates around mediumm such as webdesign, image production, 3D software, creative coding, structure building.
+            <br> <br> At the moment, she is building a treehouse in a network (with Anna Mareschal de Charentenay) and exploring the means of interractive sound making in a group. You can contact her by <a id=email href="mailto:marie.verdeil@gmail.com">email</a>            or see her <a id=instagram href="https://www.instagram.com/marie_verdeil/">instagram page</a> . She speaks fluently french and english.
+            <br><br>&darr; &darr; &darr;<br><br> <br> <br>
+            <p> <span class=cv>CV →  </span>
+                <br> Education <br> 2019-2020; BA (Media and Culture) at <a href="https://designacademy.nl/">Design Academy Eindhoven </a> (NL). <br> 2018-2019; Propedeutic year at Design Academy Eindhoven (NL). <br> 2015-2018; Applied Arts Highschool
+                Degree at <a href="https://ecole-boulle.org/">Ecole Boulle </a> (FR), graduated with honours. <br>
+                <br> <br> Experience <br> 2020-Ongoing; Freelance web development for websites in the Design/Art field. See selected works/collaboration: <a href="https://elevatorradio.network/">www.elevatorradio.network </a>, <a href=http://milesworner.net/;>www.milesworner.net</a>,
+                <a href="https://thesurfactantcontinuum.online/www.thesurfactantcontinuum.online">thesurfactantcontinuum.online</a>.
+                <br> 2019-2021; Graphic design, communication and organisation for the DAE Lecture Series (DAE public program). <br> 2019-2021; Host, service and sale for the Zbar, DAE, DDW, etc. <br> 2019; Youth worker diploma (BAFA in France).
+                <br> 2016-2018; Student Council member at Ecole Boulle (FR). <br>
+                <br> <br> Exhibition&Features <br> May 2021; Exhibition and publication feature as part of the <a href="https://www.onomatopee.net/exhibition/meeting-grounds/"> Meeting Ground #4 by Onomatopee </a> . <br> March 2021; Interview <a href="https://www.designacademy.nl/p/research-and-debate/dae-lecture-series/touching-base-on-reality-a-conversation-with-eliott-tsaramaro-marie-verdeil-and-paula-chang-of-the-dae-lecture-committee"> “Touching Base On Reality”</a>                as part of the DAE Lecture Committee.
+                <br> Dec 2020; Group exhibition “We’ve Never Cycled to Dylan’s” at De Fabriek, Eindhoven (NL).
+                <br> Dec 2019; Group exhibition “Underexposed Underground” at De Fabriek, Eindhoven (NL). <br>
+                <br> <br> Skills <br> Work organisation; event organisation, team work, autonomous working, concept, critical thinking. <br> Digital; AdobeSuite (Photoshop, InDesign, Premiere, Illustrator), 3d software (C4D, Blender, Rhino), creative
+                coding (P5.js, Processing, Arduino), web development (HTML, CSS, JS), Office. <br> Hands-on; Wood building, Sewing, Electronics. <br>
+            </p>
+            <br> <br>&darr; &darr; &darr;
+        </div>
+
     </div>
 
 
-    <div id=drawingcanvas></div>
 
 
-    <img id="displayedimage" onerror="this.onerror=null; this.style.display = 'none'" src="images/1.png">
-    <img id="img11" src="images/11.png" onerror="this.onerror=null; this.style.display = 'none'" alt="">
-    <p class="texts" id=description>description</p>
-    <div class="texts" id="saveimg" onclick="saveimg()">Save drawing</div>
+
+
+
 </body>
-
-</html>
